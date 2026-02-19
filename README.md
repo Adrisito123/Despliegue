@@ -27,3 +27,9 @@ Ramas: Se utilizó la rama fix-styles para cambios de CSS y se fusionó con la r
 4. Requisitos del Sistema
 
 Servidor Web: Apache (XAMPP).
+
+
+5. Ramas 
+-  fix-styles 
+- main
+- mejora-css
