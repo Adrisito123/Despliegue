@@ -1,35 +1,16 @@
-1. Administración del Servidor
+# Proyecto de Despliegue - UD4
+**Autor:** [Nombre del Alumno]
+**Fecha:** Febrero 2026
 
-Software: XAMPP con FileZilla Server.
+## 1. Entorno de Servidor
+* **Servidor Web:** Apache (XAMPP) / Nginx (Linux)
+* **Versión PHP:** 8.x
+* **Acceso SFTP:** Configurado para usuario `deployer`
 
-Protocolo: SFTP (puerto 22 de SSH) para garantizar el cifrado en el movimiento de activos.
+## 2. Configuración de Red
+* **Dominio Local:** `www.proyecto-daw.test` -> Resolviendo a 127.0.0.1
 
-Usuarios: Se han creado los usuarios dev_junior (permisos limitados) y dev_senior (permisos totales) para evitar el uso de la cuenta de administrador.
-
-2. Infraestructura de Red
-
-DNS Local: Se ha utilizado el archivo de hosts para simular un entorno virtualizado.
-
-Dominios: El proyecto responde a frontend.test, backend.test y db.test.
-
-
-Ruta del archivo: C:\Windows\System32\drivers\etc\hosts.
-
-3. Control de Versiones
-
-Herramienta: Git.
-
-Metodología: Despliegue basado en commits, no en archivos sueltos.
-
-
-Ramas: Se utilizó la rama fix-styles para cambios de CSS y se fusionó con la rama principal.
-
-4. Requisitos del Sistema
-
-Servidor Web: Apache (XAMPP).
-
-
-5. Ramas 
--  fix-styles 
-- main
-- mejora-css
+## 3. Instrucciones de Despliegue
+1. Clonar el repositorio.
+2. Mover archivos mediante SFTP a la carpeta `htdocs`.
+3. Verificar permisos de escritura en la subcarpeta `/uploads`.
